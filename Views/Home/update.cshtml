@@ -1,0 +1,36 @@
+@model Dish
+
+<h1>Edit Dish!</h1>
+
+<a href="/">Home</a>
+
+<form action="/edit/@Model.Id" method="post">
+    <label>
+        Chef's Name
+        <input type="text" name="Chef" value="@Model.Chef">
+    </label>
+    <label>
+        Name of Dish
+        <input type="text" name="Name" value="@Model.Name">
+    </label>
+    <label>
+        # of Calories
+        <input type="text" name="Calories" value="@Model.Calories">
+    </label>
+    <label>
+        Tastiness
+        <select name="Tastiness">
+            <option value="@Model.Tastiness"></option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+        </select>
+    </label>
+    <label>
+        Description
+        <textarea name="Description">@Model.Description</textarea>
+    </label>
+    <button>Submit</button>
+</form>

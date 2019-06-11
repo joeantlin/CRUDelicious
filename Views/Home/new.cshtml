@@ -1,0 +1,33 @@
+<h1>Add a new Dish!</h1>
+
+<a href="/">Home</a>
+
+<form action="/newdish" method="post">
+    <label>
+        Chef's Name
+        <input type="text" name="Chef">
+    </label>
+    <label>
+        Name of Dish
+        <input type="text" name="Name">
+    </label>
+    <label>
+        # of Calories
+        <input type="text" name="Calories">
+    </label>
+    <label>
+        Tastiness
+        <select name="Tastiness">
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+        </select>
+    </label>
+    <label>
+        Description
+        <textarea name="Description"></textarea>
+    </label>
+    <button>Submit</button>
+</form>
